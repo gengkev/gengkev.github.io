@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello, world!"
-date:   2015-04-05 02:21:32
+date:   2015-04-05 02:21:32 -04:00
 categories:
 ---
 Hello world! This is maybe going to eventually be a personal webpage.
