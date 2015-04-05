@@ -3,6 +3,7 @@ title: Kevin Geng
 email: example@example.com
 description: >
   This will maybe someday be my personal website.
+timezone: America/New_York
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gengkev.github.io/" # the base hostname & protocol for your site
 twitter_username: gengkev
