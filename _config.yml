@@ -1,0 +1,12 @@
+# Site settings
+title: Kevin Geng
+email: example@example.com
+description: >
+  This will maybe someday be my personal website.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://gengkev.github.io/" # the base hostname & protocol for your site
+twitter_username: gengkev
+github_username:  gengkev
+
+# Build settings
+markdown: kramdown
