@@ -2,7 +2,7 @@
 title: [insert title here]
 description: i think this is supposed to be a blog or something
 timezone: America/New_York
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://gengkev.github.io/" # the base hostname & protocol for your site
 twitter_username: gengkev
 github_username:  gengkev
