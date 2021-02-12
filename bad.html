@@ -1,0 +1,112 @@
+<!--
+wow, what a cool kid, reading the source! B-)
+unfortunately theres not really anything interesting here
+-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>gengkev</title>
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <script src="email.js" type="text/javascript"></script>
+</head>
+<body>
+  <h1>gengkev</h1>
+  <p>
+    hi! im just a kid... a high school kid. sometimes i like to program and
+    things, but i don't really know. unfortunately i am also
+    <a href="https://github.com/gengkev/thyroxine/issues/19">a nerd</a>.
+  </p>
+  <p>
+    here are some less terrible projects i have worked on.
+  </p>
+  <ul>
+    <li>
+      <p>
+        <strong>luvmarkdown</strong> &mdash; a web problem for tjctf 2016.
+        i think only three teams solved it during the competition! it's kind
+        of a convoluted problem, especially since the code <em>looks</em>
+        pretty secure. (thanks, content security policy!) but of course, csp
+        can't be a silver bullet. the exploit involves finding a subtle stored
+        xss vulnerability, then using it to conduct a session fixation attack.
+      </p>
+      <p>
+        to set it up on your own computer, install node and phantomjs, making
+        sure that both are in the path. then run <code>node setup.js</code>
+        and <code>node src/app.js</code>.
+      </p>
+      <p>
+        <a href="https://github.com/TJCSec/tjctf-1516-released/tree/master/luvmarkdown">source on github</a> &middot;
+        <a href="https://tjctf.org/">tjctf homepage</a>
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>thyroxine</strong> &mdash; an android client for tjhsst
+        intranet. i built this over a series of saturdays around winter 2014
+        to spring 2015, and i've probably put more effort into it than any
+        other project i've done. (coincidentally <a href="https://github.com/el1t/Iolite">iolite</a>
+        was being developed around the same time, but that actually gained some
+        user traction!)
+      </p>
+      <p>
+        probably the most interesting thing that thyroxine can do is that it
+        can synchronize data and store it offline. implementing that required
+        a lot of mucking around with android sqlite and syncadapter and
+        accountmanager and blagh. anyway i should probably update it to use
+        ion instead of iodine sometime, but that will also take quite a bit of
+        work.
+      </p>
+      <p>
+        <a href="https://github.com/gengkev/thyroxine">source on github</a> &middot;
+        <a href="https://ion.tjhsst.edu/about">about tjhsst intranet</a>
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>fresh eats</strong> &mdash; a marketplace to sell homemade food.
+        rohan suri and i built this during vthacks III (which took place from
+        february 26 &ndash; 28, 2016). we won third place overall! the app
+        doesn't exactly completely work yet, of course. it was built using the
+        ionic framework, which uses angular.js, and firebase as a backend.
+      </p>
+      <p>
+        <a href="http://devpost.com/software/fresh-eats">project on devpost</a> &middot;
+        <a href="http://www.vthacks.com/">vthacks website</a>
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>instant recall</strong> &mdash; an app that notifies you when
+        food items you purchase are recalled. eric wang, joseph chen, and i
+        built this during incubatedc 2016 (which took place from august 6
+        &ndash; 7, 2016), winning third place overall. the app lets you scan
+        receipts to track what food products you purchase. then it
+        cross-references those with data from the openfda api to determine
+        whether any have been recalled. the app is built with hacky jquery.
+      </p>
+      <p>
+        unfortunately, the receipt scanning is currently rather poor (stuffing
+        it through ocr and matching the resulting text) and the openfda api
+        only seems to be updated once every few months, prohibiting truly
+        instant recall notifications. we would also want to integrate with data
+        from USDA, which also issues recalls.
+      </p>
+      <p>
+        <a href="https://drive.google.com/folderview?id=0B4pKCnO2NaBvX3VTdXBuLWphVjQ&usp=sharing">screenshots</a> &middot;
+        <a href="http://incubatex.org/dc/">incubatedc page</a> &middot;
+        <a href="https://open.fda.gov/food/enforcement/">openfda api</a>
+      </p>
+    </li>
+  </ul>
+
+  <br />
+
+  <p>
+    if for some reason you want to, you can email the aforementioned nerd at
+    <span id="email_thing">[email goes here]</span>.
+    thanks and i hope you have a really great day!
+  </p>
+
+</body>
+</html>
