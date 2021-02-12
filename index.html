@@ -1,112 +1,112 @@
-<!--
-wow, what a cool kid, reading the source! B-)
-unfortunately theres not really anything interesting here
--->
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>gengkev</title>
   <link rel="stylesheet" href="main.css" type="text/css" />
-  <script src="email.js" type="text/javascript"></script>
 </head>
 <body>
-  <h1>gengkev</h1>
-  <p>
-    hi! im just a kid... a high school kid. sometimes i like to program and
-    things, but i don't really know. unfortunately i am also
-    <a href="https://github.com/gengkev/thyroxine/issues/19">a nerd</a>.
+  <p>I don't really have anything to put here, so I'm just going to put some
+  things related to tech that I find useful but were fairly non-obvious to me.
   </p>
-  <p>
-    here are some less terrible projects i have worked on.
-  </p>
-  <ul>
-    <li>
-      <p>
-        <strong>luvmarkdown</strong> &mdash; a web problem for tjctf 2016.
-        i think only three teams solved it during the competition! it's kind
-        of a convoluted problem, especially since the code <em>looks</em>
-        pretty secure. (thanks, content security policy!) but of course, csp
-        can't be a silver bullet. the exploit involves finding a subtle stored
-        xss vulnerability, then using it to conduct a session fixation attack.
-      </p>
-      <p>
-        to set it up on your own computer, install node and phantomjs, making
-        sure that both are in the path. then run <code>node setup.js</code>
-        and <code>node src/app.js</code>.
-      </p>
-      <p>
-        <a href="https://github.com/TJCSec/tjctf-1516-released/tree/master/luvmarkdown">source on github</a> &middot;
-        <a href="https://tjctf.org/">tjctf homepage</a>
-      </p>
-    </li>
-    <li>
-      <p>
-        <strong>thyroxine</strong> &mdash; an android client for tjhsst
-        intranet. i built this over a series of saturdays around winter 2014
-        to spring 2015, and i've probably put more effort into it than any
-        other project i've done. (coincidentally <a href="https://github.com/el1t/Iolite">iolite</a>
-        was being developed around the same time, but that actually gained some
-        user traction!)
-      </p>
-      <p>
-        probably the most interesting thing that thyroxine can do is that it
-        can synchronize data and store it offline. implementing that required
-        a lot of mucking around with android sqlite and syncadapter and
-        accountmanager and blagh. anyway i should probably update it to use
-        ion instead of iodine sometime, but that will also take quite a bit of
-        work.
-      </p>
-      <p>
-        <a href="https://github.com/gengkev/thyroxine">source on github</a> &middot;
-        <a href="https://ion.tjhsst.edu/about">about tjhsst intranet</a>
-      </p>
-    </li>
-    <li>
-      <p>
-        <strong>fresh eats</strong> &mdash; a marketplace to sell homemade food.
-        rohan suri and i built this during vthacks III (which took place from
-        february 26 &ndash; 28, 2016). we won third place overall! the app
-        doesn't exactly completely work yet, of course. it was built using the
-        ionic framework, which uses angular.js, and firebase as a backend.
-      </p>
-      <p>
-        <a href="http://devpost.com/software/fresh-eats">project on devpost</a> &middot;
-        <a href="http://www.vthacks.com/">vthacks website</a>
-      </p>
-    </li>
-    <li>
-      <p>
-        <strong>instant recall</strong> &mdash; an app that notifies you when
-        food items you purchase are recalled. eric wang, joseph chen, and i
-        built this during incubatedc 2016 (which took place from august 6
-        &ndash; 7, 2016), winning third place overall. the app lets you scan
-        receipts to track what food products you purchase. then it
-        cross-references those with data from the openfda api to determine
-        whether any have been recalled. the app is built with hacky jquery.
-      </p>
-      <p>
-        unfortunately, the receipt scanning is currently rather poor (stuffing
-        it through ocr and matching the resulting text) and the openfda api
-        only seems to be updated once every few months, prohibiting truly
-        instant recall notifications. we would also want to integrate with data
-        from USDA, which also issues recalls.
-      </p>
-      <p>
-        <a href="https://drive.google.com/folderview?id=0B4pKCnO2NaBvX3VTdXBuLWphVjQ&usp=sharing">screenshots</a> &middot;
-        <a href="http://incubatex.org/dc/">incubatedc page</a> &middot;
-        <a href="https://open.fda.gov/food/enforcement/">openfda api</a>
-      </p>
-    </li>
-  </ul>
 
-  <br />
+  <ol>
+    <li>
+      <p>You can <a
+        href="https://www.howtogeek.com/434380/how-to-change-the-default-font-in-google-docs/"
+        target="_blank">change the default font</a> in Google Docs. Arial
+      haters, this one's for you.</p>
+    </li>
+    <li>
+      <p>On Twitter, you can share a video without quote-tweeting it (this
+      happens when you see "From: <i>account name</i>" below the video). If you
+      have a link to the original tweet with the video, just append "/video/1"
+      to the end of the URL.</p>
 
-  <p>
-    if for some reason you want to, you can email the aforementioned nerd at
-    <span id="email_thing">[email goes here]</span>.
-    thanks and i hope you have a really great day!
-  </p>
+      <p>However, this <em>doesn't</em> work if you're using it on a tweet
+      where the video is shared (you see "From: <i>account name</i>"). Instead,
+      you need to find the original tweet's URL. There's a few things to
+      understand here:</p>
+
+      <ul>
+        <li>At its core, Twitter is a platform for sharing text, up to 280
+          characters (the original limit, 140 characters, was the size of a
+          text message). Everything else was originally built on top of that,
+          and to some extent still is.</li>
+        <li>When you share a video on Twitter, the text of the Tweet includes a
+          link to the video at the end, which starts with pic.twitter.com.
+          However, you don't see this because Twitter replaces it with the
+          actual video.</li>
+        <li>Furthermore, all links that you share on Twitter are shortened
+          using the t.co URL shortener. This is done to minimize the character
+          count taken up by URLs, and probably for tracking purposes.</li>
+      </ul>
+
+      <p>So in order to share the video, we just need to find the video link
+      hidden at the end of the unerlying text of the tweet. We can do this as
+      follows:</p>
+
+      <ul>
+        <li>On <strong>iOS</strong>, you can already share the video URL
+          directly so you don't need this.</li>
+        <li>On <strong>Android</strong>, long-press on the text of the tweet to
+          copy it. When you paste it, you'll find a link at the end of the
+          tweet. This is the video link, and you can use it to reshare the
+          video.</li>
+        <li>On <strong>web</strong>, you can use the "Embed Tweet"
+          functionality. Copying the HTML code will reveal the video link at
+          the end of the tweet.</li>
+      </ul>
+    </li>
+    <li>
+      <p>If you're using a Chinese Pinyin IME, some of them may require you to
+      type "v" instead of "u" to represent &#252; in Pinyin, which is not
+      something you learn in a textbook.</p>
+      <p>Part of the confusion here is the way Pinyin renders sounds. Note that
+      the vowel in &#40060; y&#250; is the same as the vowel in &#32511;
+      l&#476;, which is different from the vowel in &#36335; l&#249;! That's
+      because there's an ambiguity between these sounds followed by an l, but
+      not followed by a y.</p>
+    </li>
+    <li>
+      <p>In the Ubuntu Korean IME which allows you to type with a US keyboard
+      layout, an uppercase letter will force the start of a new Hangul
+      block (a dash doesn't work).</p>
+      <p>Also, at least for this IME, keep in mind that Revised Romanization
+      tries to better reflect the way Hangul is pronounced. When typing, you
+      want RR transliteration instead, which directly maps to the jamo used in
+      each Hangul block.</p>
+      <p>For example, the Revised Romanization for &#51076;&#45768;&#45796; is
+      "imnida" which reflects the pronounciation, but you would need to type
+      "ibnida" to input it. See the table at the bottom of <a
+      href="https://en.wikipedia.org/wiki/Romanization_of_Korean"
+      target="_blank">Romanization of Korean (Wikipedia)</a>.</p>
+    </li>
+    <li>
+      <p> You can open a "simple" text editor just by visiting
+      <code>data:text/html,&lt;textarea&gt;</code>, which just creates an HTML
+      page with a single <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
+      target="_blank">&lt;textarea&gt;</a> element using a <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs"
+      target="_blank">data URL</a>.</p>
+      <p>One use for this is that you can paste into it, then copy out of it,
+      if you want to "Paste as plain text" something with multiple lines. This
+      sometimes has advantages over using a native text editor; for example
+      copying out of Notepad on Windows will use CRLF for line breaks, whereas
+      Chrome shouldn't.</p>
+    </li>
+    <li>
+      <p>In Android, you can copy text out of any app, anywhere, by
+      long-pressing from the task switcher. Unfortunately, this only seems to
+      work for English text (it seems to be performing OCR).</p>
+    </li>
+  </ol>
+
+  <hr>
+
+  <p>If you want, you can take a look at <a href="/bad.html">the website that
+    used to be here</a> (warning: embarassing).</p>
 
 </body>
 </html>
