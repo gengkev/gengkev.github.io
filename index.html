@@ -48,11 +48,12 @@
 
       <ul>
         <li>On <strong>iOS</strong>, you can already share the video URL
-          directly so you don't need this.</li>
-        <li>On <strong>Android</strong>, long-press on the text of the tweet to
-          copy it. When you paste it, you'll find a link at the end of the
-          tweet. This is the video link, and you can use it to reshare the
-          video.</li>
+          directly so you don't need this. Long-press the video and select
+          "Tweet video".</li>
+        <li>On <strong>Android</strong>, long-press the <strong>text</strong>
+          of the tweet to copy it. Then paste it somewhere like a notes app.
+          When you paste it, you'll find a link at the end of the tweet. This
+          is the video link, and you can use it to reshare the video.</li>
         <li>On <strong>web</strong>, you can use the "Embed Tweet"
           functionality. Copying the HTML code will reveal the video link at
           the end of the tweet.</li>
@@ -100,6 +101,42 @@
       <p>In Android, you can copy text out of any app, anywhere, by
       long-pressing from the task switcher. Unfortunately, this only seems to
       work for English text (it seems to be performing OCR).</p>
+    </li>
+    <li>
+      <p>If for some reason you have a Windows XP virtual machine, and you're
+      trying to install East Asian language support (necessary to display
+      Chinese, Japanese, or Korean), and you're missing files from the Windows
+      XP install CD...  You can get by for the first few by downloading the
+      files individually online, but I promise you, there's a lot, and it's
+      maybe not the wisest thing to do.</p>
+
+      <p>You can actually get a significant number of the necessary files by
+      downloading and extracting files from the installer for Windows XP
+      Service Pack 3, which is still available by searching the <a
+      href="https://www.catalog.update.microsoft.com/"
+      target="_blank">Microsoft Update Catalog</a>, including
+      <code>cplexe.exe</code> (but its friends as well, the exe is not enough).
+      And no, Windows Update does not really work anymore on Windows XP.
+
+      However, those files are still not enough &mdash; files such as
+      <code>xjis.nls</code>, <code>c_10001.nls</code>, etc., don't appear to
+      have been updated in any of the service packs. (Trust me, I checked!) It
+      looks like those files are related to character support / IMEs / etc.</p>
+
+      <p>The simplest solution? For some reason, <a
+      href="https://archive.org/details/WinXPProSP3x86"
+      target="_blank">archive.org hosts a CD of Windows XP Professional
+      SP3</a>. Just download that and mount it into your virtual machine, and
+      Windows will be happy!  I have no idea why a website as prominent and
+      reputable as archive.org is hosting that when it's obviously copyright
+      infringement, but I guess that's their problem, not mine...</p>
+
+      <p>And if you're wondering why I'm trying to install East Asian language
+      support on Windows XP in the year of our lord 2021... maybe some
+      questions are better left unanswered. But if you do find yourself in this
+      situation, feel free to get in touch with me &mdash; I'm hoping some
+      people will find this through Google and won't have to suffer as much as
+      I did.</p>
     </li>
   </ol>
 
